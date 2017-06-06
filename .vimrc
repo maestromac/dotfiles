@@ -58,7 +58,8 @@ endif
 
 " custom leader mapping
 let mapleader = ","
-noremap <leader>f :Ack<space>""<Left>
+noremap <leader>f :tab split<CR>:Ack ""<Left>
+noremap <leader>F :tab split<CR>:Ack <C-r><C-w><CR>
 noremap <leader>w :w<cr>
 noremap <leader>q :q<cr>
 noremap <leader><Tab> :wq<cr>

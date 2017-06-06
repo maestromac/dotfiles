@@ -65,6 +65,10 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 # ----------------------------------------------------------------------------------
 
+# Git Editor setting (won't work without having macvim installed)
+export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -f '
+# ----------------------------------------------------------------------------------
+
 # Alias
 alias aadrop='cd /Users/Mac/Dropbox/AppAcademy'
 alias dev='cd ~/practicaldeveloper'
@@ -77,7 +81,7 @@ alias zrake='bundle exec zeus rake jobs:work'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='mvim ~/.vimrc'
 alias zshrc='mvim ~/.zshrc'
-alias config='/usr/bin/git --git-dir=/Users/Mac/.cfg/ --work-tree=/Users/Mac'
+alias dot='/usr/bin/git --git-dir=/Users/Mac/.cfg/ --work-tree=/Users/Mac'
 # ----------------------------------------------------------------------------------
 
 # NVM
