@@ -77,6 +77,7 @@ alias zrake='bundle exec zeus rake jobs:work'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='mvim ~/.vimrc'
 alias zshrc='mvim ~/.zshrc'
+alias config='/usr/bin/git --git-dir=/Users/Mac/.cfg/ --work-tree=/Users/Mac'
 # ----------------------------------------------------------------------------------
 
 # NVM
@@ -91,4 +92,3 @@ stty -ixon
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 # ----------------------------------------------------------------------------------
-alias config='/usr/bin/git --git-dir=/Users/Mac/.cfg/ --work-tree=/Users/Mac'
