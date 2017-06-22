@@ -56,7 +56,7 @@ if executable('ag')
 endif
 " -------------------------------------------------------------------------------
 
-" custom leader mapping
+" custom leader and other mapping
 let mapleader = ","
 noremap <leader>f :tab split<CR>:Ack ""<Left>
 noremap <leader>F :tab split<CR>:Ack <C-r><C-w><CR>
@@ -64,6 +64,8 @@ noremap <leader>w :w<cr>
 noremap <leader>q :q<cr>
 noremap <leader><Tab> :wq<cr>
 noremap <leader>3 :NERDTreeTabsToggle<CR>
+vnoremap <C-c> :w !pbcopy<CR><CR>
+noremap <C-v> :r !pbpaste<CR><CR>
 " -------------------------------------------------------------------------------
 
 " auto highlight trailing white spaces
