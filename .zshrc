@@ -4,7 +4,7 @@ DEFAULT_USER=Mac
 
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Mac/.oh-my-zsh
-
+export TERM="xterm-256color"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
 # ZSH_THEME="agnoster"
@@ -52,7 +52,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git git-open)
 
 source $ZSH/oh-my-zsh.sh
 

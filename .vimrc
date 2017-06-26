@@ -15,11 +15,19 @@ Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
+Plug 'thewtex/tmux-mem-cpu-load'
+Plug 'bling/vim-bufferline'
 call plug#end()
 " -------------------------------------------------------------------------------
 
-" Theme
+" Theme and lightline configuration
 colorscheme onedark
+
+set noshowmode
+
+if !has('gui_running')
+  set t_Co=256
+endif
 " -------------------------------------------------------------------------------
 
 " Sensible default stuff
