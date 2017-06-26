@@ -73,7 +73,6 @@ noremap <leader>q :q<cr>
 noremap <leader><Tab> :wq<cr>
 noremap <leader>3 :NERDTreeTabsToggle<CR>
 vnoremap <C-c> :w !pbcopy<CR><CR>
-noremap <C-v> :r !pbpaste<CR><CR>
 " -------------------------------------------------------------------------------
 
 " auto highlight trailing white spaces
