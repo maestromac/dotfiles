@@ -16,7 +16,6 @@ Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'thewtex/tmux-mem-cpu-load'
-Plug 'bling/vim-bufferline'
 call plug#end()
 " -------------------------------------------------------------------------------
 
