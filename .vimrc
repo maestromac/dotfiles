@@ -4,6 +4,7 @@ Plug 'Valloric/YouCompleteMe'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf.vim'
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/vim-gitbranch'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'joshdick/onedark.vim'
@@ -16,6 +17,7 @@ Plug 'tpope/vim-sensible'
 Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'thewtex/tmux-mem-cpu-load'
+Plug 'tpope/vim-fugitive'
 call plug#end()
 " -------------------------------------------------------------------------------
 
@@ -27,6 +29,16 @@ set noshowmode
 if !has('gui_running')
   set t_Co=256
 endif
+
+let g:lightline = {
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \ 'component_function': {
+      \   'gitbranch': 'gitbranch#name'
+      \ },
+      \ }
 " -------------------------------------------------------------------------------
 
 " Sensible default stuff

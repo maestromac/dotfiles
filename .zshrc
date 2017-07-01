@@ -64,6 +64,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+# export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
+# export PATH="/usr/local/Cellar/chromedriver/2.30/bin:$PATH"
 # ----------------------------------------------------------------------------------
 
 # Git Editor setting (won't work without having macvim installed)
