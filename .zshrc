@@ -65,6 +65,8 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 
+# export PATH="$HOME/bin/cc-test-reporter"
+
 # Potentially useful path in the future
 # export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
 # export PATH="/usr/local/Cellar/chromedriver/2.30/bin:$PATH"
