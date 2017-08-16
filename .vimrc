@@ -83,7 +83,7 @@ noremap <leader>F :tab split<CR>:Ack <C-r><C-w><CR>
 noremap <leader>w :w<cr>
 noremap <leader>q :q<cr>
 noremap <leader><Tab> :wq<cr>
-noremap <leader>3 :NERDTreeTabsToggle<CR>
+noremap <leader>3 :NERDTreeToggle<CR>
 vnoremap <C-c> :w !pbcopy<CR><CR>
 " -------------------------------------------------------------------------------
 
@@ -102,6 +102,12 @@ function! TrimWhiteSpace()
 endfunction
 autocmd BufWritePre *.js,*.rb,*.erb :call TrimWhiteSpace()
 " -------------------------------------------------------------------------------
+
+" auto-reload
+augroup myvimrchooks
+  au!
+  autocmd bufwritepost .vimrc source ~/.vimrc
+augroup END
 
 " FZF stuff
 set rtp+=~/.fzf
