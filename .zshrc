@@ -87,8 +87,8 @@ alias zt='zeus rspec'
 alias zr='zeus rake'
 alias zwork='zeus rake jobs:work'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
-alias vimrc='mvim ~/.vimrc'
-alias zshrc='mvim ~/.zshrc'
+alias vimrc='nvim ~/.vimrc'
+alias zshrc='nvim ~/.zshrc'
 alias dot='/usr/bin/git --git-dir=/Users/Mac/.cfg/ --work-tree=/Users/Mac'
 # ----------------------------------------------------------------------------------
 
