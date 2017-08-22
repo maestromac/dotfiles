@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/bundle')
 Plug 'Valloric/YouCompleteMe'
 Plug 'mileszs/ack.vim'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
 Plug 'itchyny/lightline.vim'
@@ -9,9 +10,9 @@ Plug 'itchyny/vim-gitbranch'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'joshdick/onedark.vim'
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-bundler'
-Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-rails'
 Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-sensible'
@@ -19,7 +20,10 @@ Plug 'airblade/vim-gitgutter'
 Plug 'jiangmiao/auto-pairs'
 Plug 'thewtex/tmux-mem-cpu-load'
 Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-endwise'
+Plug 'w0rp/ale'
 call plug#end()
+"let see if I will see this line
 " -------------------------------------------------------------------------------
 
 " Theme and lightline configuration
@@ -59,15 +63,15 @@ set hlsearch
 " -------------------------------------------------------------------------------
 
 " syntastic settings
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 0
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_ruby_checkers=['mri', 'rubocop']
-let g:syntastic_loc_list_height = 3
+" set statusline+=%#warningmsg#
+" set statusline+=%{SyntasticStatuslineFlag()}
+" set statusline+=%*
+" let g:syntastic_always_populate_loc_list = 1
+" let g:syntastic_auto_loc_list = 0
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
+" let g:syntastic_ruby_checkers=['mri', 'rubocop']
+" let g:syntastic_loc_list_height = 3
 " -------------------------------------------------------------------------------
 
 " Ack.vim setting (with ag instead of ack)
@@ -111,7 +115,9 @@ augroup END
 
 " FZF stuff
 set rtp+=~/.fzf
-nnoremap <C-p> :Files<CR>﻿
+nnoremap <C-p> :FZF<CR>
+" This used to work with MacVim but it kind of break NeoVim
+" nnoremap <C-p> :Files<CR>﻿
 " -------------------------------------------------------------------------------
 
 " NERDcommenter
