@@ -5,11 +5,12 @@ Plug 'mileszs/ack.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/goyo.vim'
-Plug 'itchyny/lightline.vim'
-Plug 'itchyny/vim-gitbranch'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'joshdick/onedark.vim'
+" Plug 'joshdick/onedark.vim'
+Plug 'junegunn/seoul256.vim'
 " Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-bundler'
 " Plug 'jistr/vim-nerdtree-tabs'
@@ -26,30 +27,38 @@ call plug#end()
 "let see if I will see this line
 " -------------------------------------------------------------------------------
 
-" Theme and lightline configuration
-colorscheme onedark
+" Theme and Airline configuration
+" colorscheme onedark
+colo seoul256
+set background=light
 
 set noshowmode
+let g:airline_theme='base16'
+" air-line
+let g:airline_powerline_fonts = 1
+
+if !exists('g:airline_symbols')
+    let g:airline_symbols = {}
+endif
+
+" Fix BCE
+if &term =~ '256color'
+    " disable Background Color Erase (BCE) so that color schemes
+    " render properly when inside 256-color tmux and GNU screen.
+    " see also http://snk.tuxfamily.org/log/vim-256color-bce.html
+    set t_ut=
+endif
+
 
 if !has('gui_running')
   set t_Co=256
 endif
-
-let g:lightline = {
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name'
-      \ },
-      \ }
 " -------------------------------------------------------------------------------
 
 " Sensible default stuff
 filetype plugin indent on
 syntax on
-colorscheme onedark
+" colorscheme onedark
 " show existing tab with 4 spaces width
 set tabstop=2
 " when indenting with '>', use 4 spaces width
