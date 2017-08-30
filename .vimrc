@@ -33,7 +33,9 @@ colo seoul256
 set background=light
 
 set noshowmode
-let g:airline_theme='base16'
+" let g:airline_theme='base16'
+let g:airline_theme='papercolor'
+let g:airline#extensions#tabline#enabled = 1
 " air-line
 let g:airline_powerline_fonts = 1
 
