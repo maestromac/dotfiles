@@ -3,7 +3,7 @@ DEFAULT_USER=Mac
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=/Users/Mac/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -77,7 +77,7 @@ export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -f '
 # ----------------------------------------------------------------------------------
 
 # Alias
-alias aadrop='cd /Users/Mac/Dropbox/AppAcademy'
+alias aadrop='cd $HOME/Dropbox/AppAcademy'
 alias dev='cd ~/practicaldeveloper'
 alias be='bundle exec'
 alias bs='bin/rails s'
@@ -88,11 +88,11 @@ alias bgu='bin/guard'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
-alias dot='/usr/bin/git --git-dir=/Users/Mac/.cfg/ --work-tree=/Users/Mac'
+alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ----------------------------------------------------------------------------------
 
 # NVM
-export NVM_DIR="/Users/Mac/.nvm"
+export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 # ----------------------------------------------------------------------------------
 
