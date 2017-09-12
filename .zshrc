@@ -73,7 +73,8 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
 # ----------------------------------------------------------------------------------
 
 # Git Editor setting (won't work without having macvim installed)
-export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -f '
+# export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -f '
+export GIT_EDITOR='nvim'
 # ----------------------------------------------------------------------------------
 
 # Alias
