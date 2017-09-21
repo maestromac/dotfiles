@@ -9,11 +9,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-" Plug 'joshdick/onedark.vim'
 Plug 'junegunn/seoul256.vim'
-" Plug 'vim-syntastic/syntastic'
 Plug 'tpope/vim-bundler'
-" Plug 'jistr/vim-nerdtree-tabs'
 Plug 'tpope/vim-rails'
 Plug 'ngmy/vim-rubocop'
 Plug 'tpope/vim-sensible'
@@ -23,8 +20,12 @@ Plug 'thewtex/tmux-mem-cpu-load'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
 Plug 'w0rp/ale'
+Plug 'djoshea/vim-autoread'
+" retired plugings
+" Plug 'joshdick/onedark.vim'
+" Plug 'jistr/vim-nerdtree-tabs'
+" Plug 'vim-syntastic/syntastic'
 call plug#end()
-"let see if I will see this line
 " -------------------------------------------------------------------------------
 
 " Theme and Airline configuration
@@ -153,4 +154,8 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
+" -------------------------------------------------------------------------------
+
+" YCM
+let g:ycm_server_python_interpreter = '/usr/bin/python'
 " -------------------------------------------------------------------------------
