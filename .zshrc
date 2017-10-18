@@ -86,9 +86,11 @@ alias bc='bin/rails c'
 alias bt='bin/rspec'
 alias br='bin/rake'
 alias bgu='bin/guard'
+alias fs='foreman start'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
+alias prepare='bundle && bin/rake db:migrate'
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ----------------------------------------------------------------------------------
 

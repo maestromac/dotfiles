@@ -19,8 +19,11 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'thewtex/tmux-mem-cpu-load'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-endwise'
+Plug 'tpope/vim-unimpaired'
 Plug 'w0rp/ale'
 Plug 'djoshea/vim-autoread'
+Plug 'mattn/emmet-vim'
+Plug 'alvan/vim-closetag'
 " retired plugings
 " Plug 'joshdick/onedark.vim'
 " Plug 'jistr/vim-nerdtree-tabs'
@@ -37,7 +40,7 @@ colo seoul256
 set noshowmode
 " let g:airline_theme='base16'
 let g:airline_theme='luna'
-" let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#enabled = 1
 " air-line
 let g:airline_powerline_fonts = 1
 
