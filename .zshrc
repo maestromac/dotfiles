@@ -90,8 +90,9 @@ alias fs='foreman start'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
-alias prepare='bundle && yarn && bin/rake db:migrate && bin/rake db:migrate RAILS_ENV=test'
-alias updateme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
+alias tr='torus run'
+alias prepare='bundle && yarn && tr bin/rails db:migrate && tr bin/rails db:migrate RAILS_ENV=test'
+alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 # ----------------------------------------------------------------------------------
 
