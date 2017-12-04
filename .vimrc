@@ -24,6 +24,7 @@ Plug 'w0rp/ale'
 Plug 'djoshea/vim-autoread'
 Plug 'mattn/emmet-vim'
 Plug 'alvan/vim-closetag'
+Plug 'galooshi/vim-import-js'
 " retired plugings
 " Plug 'joshdick/onedark.vim'
 " Plug 'jistr/vim-nerdtree-tabs'
