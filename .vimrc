@@ -113,6 +113,7 @@ noremap <leader>q :q<cr>
 noremap <leader><Tab> :wq<cr>
 noremap <leader>3 :NERDTreeToggle<CR>
 noremap <leader>ale :ALEFix<CR>
+noremap <leader>n :NERDTreeFind<CR>
 vnoremap <C-c> :w !pbcopy<CR><CR>
 inoremap jj <Esc>
 " -------------------------------------------------------------------------------
