@@ -36,6 +36,10 @@ Plug 'w0rp/ale'
 call plug#end()
 " -------------------------------------------------------------------------------
 
+" Misc setting
+set cursorline
+" -------------------------------------------------------------------------------
+
 " Theme and Airline configuration
 " colorscheme onedark
 colo seoul256
