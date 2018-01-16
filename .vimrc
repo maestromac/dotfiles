@@ -178,3 +178,6 @@ let g:NERDTrimTrailingWhitespace = 1
 " YCM
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 " -------------------------------------------------------------------------------
+
+" GIT
+autocmd Filetype gitcommit setlocal spell textwidth=72
