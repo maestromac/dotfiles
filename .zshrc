@@ -102,6 +102,7 @@ alias tr='torus run'
 alias prepare='bundle && yarn && tr bin/rails db:migrate && tr bin/rails db:migrate RAILS_ENV=test'
 alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
+alias genctags='ctags -R --exclude=.git --exclude=node_modules'
 # ----------------------------------------------------------------------------------
 
 # NVM
@@ -123,3 +124,4 @@ stty -ixon
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
+
