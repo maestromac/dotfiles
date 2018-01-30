@@ -101,6 +101,7 @@ alias zshrc='nvim ~/.zshrc'
 alias tr='torus run'
 alias prepare='bundle && yarn && bin/rails db:migrate && bin/rails db:migrate RAILS_ENV=test'
 alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
+alias getkeys="torus export > config/application.yml && sed -i '' 's/=/: /' config/application.yml"
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias genctags='ctags -R --exclude=.git --exclude=node_modules'
 # ----------------------------------------------------------------------------------
