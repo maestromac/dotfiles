@@ -144,10 +144,12 @@ augroup myvimrchooks
   au!
   autocmd bufwritepost .vimrc source ~/.vimrc
 augroup END
+" -------------------------------------------------------------------------------
 
 " FZF stuff
 set rtp+=~/.fzf
-nnoremap <C-p> :FZF<CR>
+" nnoremap <C-p> :FZF<CR> THIS IS THE DEFAULT SETTING
+nnoremap <C-p> :call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standard --others --cached'}))<CR>
 " This used to work with MacVim but it kind of break NeoVim
 " nnoremap <C-p> :Files<CR>﻿
 " -------------------------------------------------------------------------------
