@@ -120,6 +120,8 @@ noremap <leader>ale :ALEFix<CR>
 noremap <leader>n :NERDTreeFind<CR>
 vnoremap <C-c> :w !pbcopy<CR><CR>
 inoremap jj <Esc>
+nnoremap p p=`]
+nnoremap <c-p> p
 " -------------------------------------------------------------------------------
 
 " auto highlight trailing white spaces
