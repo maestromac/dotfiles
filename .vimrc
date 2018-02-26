@@ -96,10 +96,18 @@ set hlsearch
 " let g:syntastic_check_on_wq = 0
 " let g:syntastic_ruby_checkers=['mri', 'rubocop']
 " let g:syntastic_loc_list_height = 3
+
+" Force all .js.erb to be treated as JavaScript
+augroup FiletypeGroup
+  autocmd!
+  au BufNewFile,BufRead *.js.erb set filetype=javascript
+augroup END
+
 let g:ale_fixers = {
-\   'javascript': ['eslint'],
-\   'ruby': ['rubocop'],
-\}
+      \   'javascript': ['eslint'],
+      \   'ruby': ['rubocop'],
+      \}
+
 " -------------------------------------------------------------------------------
 
 " Ack.vim setting (with ag instead of ack)
