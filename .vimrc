@@ -41,14 +41,14 @@ set cursorline
 
 " Theme and Airline configuration
 " colorscheme onedark
-colo seoul256
+colo seoul256-light
 " set background=
 " let g:seoul256_background = 239
 
 set noshowmode
 " let g:airline_theme='base16'
 let g:airline_theme='luna'
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 " air-line
 let g:airline_powerline_fonts = 1
 
