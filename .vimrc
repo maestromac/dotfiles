@@ -1,5 +1,6 @@
 " vim-plug
 call plug#begin('~/.vim/bundle')
+Plug 'Valloric/YouCompleteMe'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'craigemery/vim-autotag'
@@ -22,7 +23,6 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'Valloric/YouCompleteMe'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'w0rp/ale'
@@ -41,9 +41,7 @@ set cursorline
 
 " Theme and Airline configuration
 " colorscheme onedark
-colo seoul256-light
-" set background=
-" let g:seoul256_background = 239
+colo seoul256
 
 set noshowmode
 " let g:airline_theme='base16'
