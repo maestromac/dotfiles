@@ -163,6 +163,11 @@ nnoremap <C-p> :call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standar
 " nnoremap <C-p> :Files<CR>﻿
 " -------------------------------------------------------------------------------
 
+" NERDTree
+
+let NERDTreeShowHidden=1
+" -------------------------------------------------------------------------------
+
 " NERDcommenter
 " Add spaces after comment delimiters by default
 let g:NERDSpaceDelims = 1
