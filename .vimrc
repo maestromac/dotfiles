@@ -40,6 +40,8 @@ call plug#end()
 
 " Misc setting
 set cursorline
+set splitright
+set splitbelow
 " -------------------------------------------------------------------------------
 
 " Theme and Airline configuration
