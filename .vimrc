@@ -46,7 +46,7 @@ set splitbelow
 
 " Theme and Airline configuration
 " colorscheme onedark
-colo seoul256
+colo seoul256-light
 
 set noshowmode
 " let g:airline_theme='base16'
