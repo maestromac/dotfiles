@@ -134,6 +134,7 @@ vnoremap <C-c> :w !pbcopy<CR><CR>
 inoremap jj <Esc>
 nnoremap p p=`]
 nnoremap <c-p> p
+vnoremap // y/<C-R>"<CR>
 " -------------------------------------------------------------------------------
 
 " auto highlight trailing white spaces
@@ -201,3 +202,9 @@ let g:ycm_server_python_interpreter = '/usr/bin/python'
 
 " GIT
 autocmd Filetype gitcommit setlocal spell textwidth=72
+" -------------------------------------------------------------------------------
+
+"  Closetag
+let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.html.erb'
+let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+" -------------------------------------------------------------------------------
