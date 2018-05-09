@@ -19,6 +19,7 @@ Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-endwise'
@@ -48,6 +49,8 @@ set splitbelow
 " Theme and Airline configuration
 " colorscheme onedark
 colo seoul256-light
+
+set encoding=UTF-8
 
 set noshowmode
 " let g:airline_theme='base16'
