@@ -15,7 +15,7 @@ Plug 'michaeljsmith/vim-indent-object'
 Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
 Plug 'ngmy/vim-rubocop'
-Plug 'pangloss/vim-javascript'
+Plug 'othree/yajs.vim'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
@@ -30,6 +30,7 @@ Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 Plug 'w0rp/ale'
 " retired plugings
 " Plug 'joshdick/onedark.vim'
