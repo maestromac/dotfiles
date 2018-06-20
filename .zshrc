@@ -99,6 +99,7 @@ alias fs='foreman start'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
+alias alac='nvim ~/.config/alacritty/alacritty.yml'
 alias tr='torus run'
 alias prepare='bundle && yarn && bin/rails db:migrate'
 alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
