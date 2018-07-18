@@ -94,7 +94,8 @@ alias bc='bin/rails c'
 alias bt='bin/spring rspec'
 alias br='bin/rake'
 alias bgu='bin/guard'
-alias grspec='bin/guard -P rspec'
+alias bw='bin/webpack-dev-server'
+alias bgr='bin/guard -P rspec'
 alias fs='foreman start'
 alias mvim='/Applications/MacVim.app/Contents/MacOS/Vim'
 alias vimrc='nvim ~/.vimrc'
@@ -119,6 +120,8 @@ stty -ixon
 
 # FZF
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+export FZF_DEFAULT_COMMAND='ag -g ""'
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # ----------------------------------------------------------------------------------
 
 # tabtab source for serverless package
@@ -128,3 +131,6 @@ stty -ixon
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
 
+
+# added by travis gem
+[ -f /Users/macsiri/.travis/travis.sh ] && source /Users/macsiri/.travis/travis.sh
