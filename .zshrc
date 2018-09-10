@@ -71,7 +71,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$HOME/.rbenv/bin:$PATH"
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:~/go/bin
 
 # export PATH="$HOME/bin/cc-test-reporter"
 
@@ -112,6 +112,7 @@ alias genctags='ctags -R --exclude=.git --exclude=node_modules'
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # ----------------------------------------------------------------------------------
 
 # disabling flow controler
