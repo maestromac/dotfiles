@@ -6,6 +6,7 @@ Plug 'alvan/vim-closetag'
 Plug 'craigemery/vim-autotag'
 Plug 'djoshea/vim-autoread'
 Plug 'galooshi/vim-import-js'
+Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -22,6 +23,7 @@ Plug 'prettier/vim-prettier', {
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
@@ -115,6 +117,10 @@ let g:ale_fixers = {
       \   'javascript': ['eslint'],
       \   'ruby': ['rubocop'],
       \}
+let g:ruby_fold = 1
+let g:javasScript_fold = 1
+set foldmethod=syntax
+set foldlevelstart=99
 
 " -------------------------------------------------------------------------------
 
@@ -212,4 +218,23 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 "  Closetag
 let g:closetag_filenames = '*.html,*.xhtml,*.phtml,*.html.erb'
 let g:closetag_xhtml_filenames = '*.xhtml,*.jsx'
+" -------------------------------------------------------------------------------
+
+" these "Ctrl mappings" work well when Caps Lock is mapped to Ctrl
+nmap <silent> t<C-n> :TestNearest<CR>
+nmap <silent> t<C-f> :TestFile<CR>
+nmap <silent> t<C-s> :TestSuite<CR>
+nmap <silent> t<C-l> :TestLast<CR>
+nmap <silent> t<C-g> :TestVisit<CR>"
+" let g:test#preserve_screen = 1
+let test#strategy = {
+  \ 'nearest': 'neovim',
+  \ 'file':    'dispatch',
+  \ 'suite':   'basic',
+\}
+let test#ruby#use_spring_binstub = 1
+let test#ruby#rspec#options = {
+  \ 'nearest': '--backtrace',
+  \ 'file':    '--format documentation',
+\}
 " -------------------------------------------------------------------------------
