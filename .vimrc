@@ -30,9 +30,9 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 Plug 'w0rp/ale'
 " retired plugings
 " Plug 'joshdick/onedark.vim'
@@ -51,20 +51,20 @@ set splitbelow
 
 " Theme and Airline configuration
 " colorscheme onedark
-colo seoul256-light
+let g:seoul256_background = 238
+colo seoul256
 
 set encoding=UTF-8
 
 set noshowmode
-" let g:airline_theme='base16'
-let g:airline_theme='luna'
+" let g:airline_theme='luna'
 " let g:airline#extensions#tabline#enabled = 1
 " air-line
-let g:airline_powerline_fonts = 1
+" let g:airline_powerline_fonts = 1
 
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
+" if !exists('g:airline_symbols')
+"     let g:airline_symbols = {}
+" endif
 
 " Fix BCE
 if &term =~ '256color'
@@ -234,7 +234,6 @@ let test#strategy = {
 \}
 let test#ruby#use_spring_binstub = 1
 let test#ruby#rspec#options = {
-  \ 'nearest': '--backtrace',
   \ 'file':    '--format documentation',
 \}
 " -------------------------------------------------------------------------------
