@@ -134,6 +134,7 @@ endif
 let mapleader = ","
 noremap <leader>f :tab split<CR>:Ack ""<Left>
 noremap <leader>F :tab split<CR>:Ack <C-r><C-w><CR>
+noremap <leader>v :!approvals verify<CR>
 noremap <leader>w :w<cr>
 noremap <leader>s :A<cr>
 noremap <leader>q :q<cr>
