@@ -117,6 +117,16 @@ let g:ale_fixers = {
       \   'javascript': ['eslint'],
       \   'ruby': ['rubocop'],
       \}
+
+"fold settings
+" ------------
+" toggle folding with za.
+" fold everything with zM
+" unfold everything with zR.
+" zm and zr can be used too
+" set foldmethod=syntax   "fold based on syntax (except for haml below)
+" set foldnestmax=10      "deepest fold is 10 levels
+" set nofoldenable        "dont fold by default
 let g:ruby_fold = 1
 let g:javasScript_fold = 1
 set foldmethod=syntax
