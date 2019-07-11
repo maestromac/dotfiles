@@ -134,34 +134,34 @@ persistent_logging: false
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# Colors (Seoul256)
+# Colors (Solarized Light)
 colors:
   # Default colors
   primary:
-    background: '0x3a3a3a'
-    foreground: '0xd0d0d0'
+    background: '0xfdf6e3'
+    foreground: '0x586e75'
 
   # Normal colors
   normal:
-    black:   '0x4e4e4e'
-    red:     '0xd68787'
-    green:   '0x5f865f'
-    yellow:  '0xd8af5f'
-    blue:    '0x85add4'
-    magenta: '0xd7afaf'
-    cyan:    '0x87afaf'
-    white:   '0xd0d0d0'
+    black:   '0xeee8d5'
+    red:     '0xdc322f'
+    green:   '0x859900'
+    yellow:  '0xb58900'
+    blue:    '0x268bd2'
+    magenta: '0xd33682'
+    cyan:    '0x2aa198'
+    white:   '0x073642'
 
   # Bright colors
   bright:
-    black:   '0x626262'
-    red:     '0xd75f87'
-    green:   '0x87af87'
-    yellow:  '0xffd787'
-    blue:    '0xadd4fb'
-    magenta: '0xffafaf'
-    cyan:    '0x87d7d7'
-    white:   '0xe4e4e4'
+    black:   '0xfdf6e3'
+    red:     '0xcb4b16'
+    green:   '0x93a1a1'
+    yellow:  '0x839496'
+    blue:    '0x657b83'
+    magenta: '0x6c71c4'
+    cyan:    '0x586e75'
+    white:   '0x002b36'
 
   # Indexed Colors
   #
