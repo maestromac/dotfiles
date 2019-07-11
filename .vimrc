@@ -17,6 +17,7 @@ Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
 Plug 'ngmy/vim-rubocop'
 Plug 'othree/yajs.vim'
+Plug 'pangloss/vim-javascript'
 Plug 'prettier/vim-prettier', {
   \ 'do': 'yarn install',
   \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
@@ -51,7 +52,7 @@ set splitbelow
 
 " Theme and Airline configuration
 " colorscheme onedark
-let g:seoul256_background = 238
+let g:seoul256_background = 253
 colo seoul256
 
 set encoding=UTF-8
@@ -128,7 +129,7 @@ let g:ale_fixers = {
 " set foldnestmax=10      "deepest fold is 10 levels
 " set nofoldenable        "dont fold by default
 let g:ruby_fold = 1
-let g:javasScript_fold = 1
+let g:javaScript_fold = 1
 set foldmethod=syntax
 set foldlevelstart=99
 
