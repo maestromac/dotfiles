@@ -11,6 +11,7 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/seoul256.vim'
+Plug 'junegunn/vim-easy-align'
 Plug 'mattn/emmet-vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'mileszs/ack.vim'
@@ -48,6 +49,7 @@ call plug#end()
 set cursorline
 set splitright
 set splitbelow
+set iskeyword+=!,?
 " -------------------------------------------------------------------------------
 
 " Theme and Airline configuration
@@ -247,4 +249,12 @@ let test#ruby#use_spring_binstub = 1
 let test#ruby#rspec#options = {
   \ 'file':    '--format documentation',
 \}
+" -------------------------------------------------------------------------------
+
+" Easy align
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
 " -------------------------------------------------------------------------------
