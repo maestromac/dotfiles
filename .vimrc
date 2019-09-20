@@ -1,6 +1,7 @@
 " vim-plug
 call plug#begin('~/.vim/bundle')
-Plug 'Valloric/YouCompleteMe'
+
+Plug 'AndrewRadev/splitjoin.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'alvan/vim-closetag'
 Plug 'craigemery/vim-autotag'
@@ -16,12 +17,12 @@ Plug 'mattn/emmet-vim'
 Plug 'michaeljsmith/vim-indent-object'
 Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'ngmy/vim-rubocop'
 Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
-Plug 'prettier/vim-prettier', {
-  \ 'do': 'yarn install',
-  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+Plug 'pedrohdz/vim-yaml-folds'
+Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
 Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
@@ -32,21 +33,24 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 Plug 'w0rp/ale'
+
 " retired plugings
 " Plug 'joshdick/onedark.vim'
 " Plug 'jistr/vim-nerdtree-tabs'
 " Plug 'vim-syntastic/syntastic'
 " Plug 'thewtex/tmux-mem-cpu-load'
 " Plug 'tpope/vim-bundler'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
+" Plug 'Valloric/YouCompleteMe'
 call plug#end()
 " -------------------------------------------------------------------------------
 
 " Misc setting
-set cursorline
+" set cursorline
+set updatetime=100
 set splitright
 set splitbelow
 set iskeyword+=!,?
@@ -219,9 +223,6 @@ let g:NERDCommentEmptyLines = 1
 
 " Enable trimming of trailing whitespace when uncommenting
 let g:NERDTrimTrailingWhitespace = 1
-" -------------------------------------------------------------------------------
-
-" YCM
 " -------------------------------------------------------------------------------
 
 " GIT
