@@ -23,7 +23,7 @@ Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
-Plug 'ryanoasis/vim-devicons'
+" Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-dispatch'
@@ -258,4 +258,12 @@ xmap ga <Plug>(EasyAlign)
 
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+" -------------------------------------------------------------------------------
+
+"  coc.nvim
+inoremap <silent><expr> <TAB>
+      \ pumvisible() ? "\<C-n>" :
+      \ <SID>check_back_space() ? "\<TAB>" :
+      \ coc#refresh()
+inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " -------------------------------------------------------------------------------
