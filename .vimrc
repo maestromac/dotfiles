@@ -58,7 +58,7 @@ set iskeyword+=!,?
 
 " Theme and Airline configuration
 " colorscheme onedark
-let g:seoul256_background = 253
+let g:seoul256_background = 237
 colo seoul256
 
 set encoding=UTF-8

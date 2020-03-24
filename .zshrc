@@ -7,17 +7,17 @@ export ZSH=$HOME/.oh-my-zsh
 export TERM="xterm-256color"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="agnoster"
+# ZSH_THEME="agnoster"
 
-# ZSH_THEME="powerlevel9k/powerlevel9k"
-# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
-# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs vi_mode root_indicator history time)
-# POWERLEVEL9K_VI_INSERT_MODE_STRING="NSRT"
-# POWERLEVEL9K_VI_COMMAND_MODE_STRING="NRML"
-# POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND="green"
-# POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND="black"
-# POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND="033"
-# POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND="black"
+ZSH_THEME="powerlevel9k/powerlevel9k"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs vi_mode root_indicator history time)
+POWERLEVEL9K_VI_INSERT_MODE_STRING="NSRT"
+POWERLEVEL9K_VI_COMMAND_MODE_STRING="NRML"
+POWERLEVEL9K_VI_MODE_INSERT_BACKGROUND="green"
+POWERLEVEL9K_VI_MODE_INSERT_FOREGROUND="black"
+POWERLEVEL9K_VI_MODE_NORMAL_BACKGROUND="033"
+POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND="black"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
