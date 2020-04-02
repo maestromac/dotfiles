@@ -50,10 +50,14 @@ call plug#end()
 
 " Misc setting
 " set cursorline
+set encoding=utf8
 set updatetime=100
 set splitright
 set splitbelow
 set iskeyword+=!,?
+" proper split line look
+set fillchars+=vert:\| "For full bar split use set │"
+autocmd ColorScheme * highlight VertSplit cterm=NONE ctermfg=Green ctermbg=NONE
 " -------------------------------------------------------------------------------
 
 " Theme and Airline configuration
