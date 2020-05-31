@@ -1,20 +1,19 @@
 " vim-plug
 call plug#begin('~/.vim/bundle')
 
-Plug 'AndrewRadev/splitjoin.vim'
-Plug 'airblade/vim-gitgutter'
-Plug 'alvan/vim-closetag'
-Plug 'craigemery/vim-autotag'
+Plug 'AndrewRadev/splitjoin.vim' "Switch between single-line and multiline forms of code
+Plug 'airblade/vim-gitgutter' "A Vim plugin which shows a git diff in the sign column and stages/previews/undoes hunks and partial hunks.
+Plug 'alvan/vim-closetag' "Auto close (X)HTML tags
 Plug 'djoshea/vim-autoread'
-Plug 'galooshi/vim-import-js'
+" Plug 'galooshi/vim-import-js'
 Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
-Plug 'mattn/emmet-vim'
-Plug 'michaeljsmith/vim-indent-object'
+" Plug 'mattn/emmet-vim'
+" Plug 'michaeljsmith/vim-indent-object'
 Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -51,7 +50,7 @@ call plug#end()
 " Misc setting
 " set cursorline
 set encoding=utf8
-set updatetime=100
+set updatetime=2000
 set splitright
 set splitbelow
 set iskeyword+=!,?
