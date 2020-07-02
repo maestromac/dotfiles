@@ -5,15 +5,13 @@ Plug 'AndrewRadev/splitjoin.vim' "Switch between single-line and multiline forms
 Plug 'airblade/vim-gitgutter' "A Vim plugin which shows a git diff in the sign column and stages/previews/undoes hunks and partial hunks.
 Plug 'alvan/vim-closetag' "Auto close (X)HTML tags
 Plug 'djoshea/vim-autoread'
-" Plug 'galooshi/vim-import-js'
 Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
-" Plug 'mattn/emmet-vim'
-" Plug 'michaeljsmith/vim-indent-object'
+Plug 'michaeljsmith/vim-indent-object'
 Plug 'mileszs/ack.vim'
 Plug 'mxw/vim-jsx'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -22,13 +20,13 @@ Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pedrohdz/vim-yaml-folds'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
-" Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-dispatch'
 Plug 'tpope/vim-endwise'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-rails'
+Plug 'tpope/vim-rhubarb'
 Plug 'tpope/vim-sensible'
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-unimpaired'
@@ -44,6 +42,10 @@ Plug 'w0rp/ale'
 " Plug 'vim-airline/vim-airline-themes'
 " Plug 'vimwiki/vimwiki', { 'branch': 'dev' }
 " Plug 'Valloric/YouCompleteMe'
+" Plug 'mattn/emmet-vim'
+" Plug 'michaeljsmith/vim-indent-object'
+" Plug 'ryanoasis/vim-devicons'
+" Plug 'galooshi/vim-import-js'
 call plug#end()
 " -------------------------------------------------------------------------------
 
