@@ -110,10 +110,8 @@ alias vimrc='nvim ~/.vimrc'
 alias zshrc='nvim ~/.zshrc'
 alias alac='nvim ~/.config/alacritty/alacritty.yml'
 alias removealldocker='docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)'
-alias tr='torus run'
 alias prepare='bundle && yarn && bin/rails db:migrate'
 alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
-alias getkeys="torus export > config/application.yml && sed -i '' 's/=/: /' config/application.yml"
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
 alias genctags='ctags -R --exclude=.git --exclude=node_modules'
 alias cachecheck='curl -svo /dev/null -H "Fastly-Debug:1" '
