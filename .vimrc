@@ -251,7 +251,7 @@ let test#strategy = {
   \ 'file':    'dispatch',
   \ 'suite':   'basic',
 \}
-let test#ruby#use_spring_binstub = 1
+let test#ruby#use_spring_binstub = 0
 let test#ruby#rspec#options = {
   \ 'file':    '--format documentation',
 \}
