@@ -95,7 +95,7 @@ export GIT_EDITOR='nvim'
 
 # Alias
 alias aadrop='cd $HOME/Dropbox/AppAcademy'
-alias dev='cd ~/dev.to'
+alias forem='cd ~/forem'
 alias be='bundle exec'
 alias bs='bin/rails s'
 alias bc='bin/rails c'
