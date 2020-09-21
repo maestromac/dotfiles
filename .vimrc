@@ -9,6 +9,7 @@ Plug 'janko-m/vim-test'
 Plug 'jiangmiao/auto-pairs'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'
 Plug 'junegunn/seoul256.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'michaeljsmith/vim-indent-object'
@@ -184,7 +185,7 @@ autocmd BufWinLeave * call clearmatches()
 function! TrimWhiteSpace()
   %s/\s\+$//e
 endfunction
-autocmd BufWritePre *.js,*.rb,*.erb :call TrimWhiteSpace()
+autocmd BufWritePre *.js,*.rb,*.erb,*.txt :call TrimWhiteSpace()
 " -------------------------------------------------------------------------------
 
 " auto-reload
@@ -272,3 +273,7 @@ inoremap <silent><expr> <TAB>
       \ coc#refresh()
 inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " -------------------------------------------------------------------------------
+
+" goyo.vim
+
+let g:goyo_width = 140
