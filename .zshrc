@@ -68,7 +68,7 @@ POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND="black"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git git-open vi-mode)
+plugins=(git vi-mode)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -78,14 +78,20 @@ source $ZSH/oh-my-zsh.sh
 # Path
 export PATH="$HOME/.rbenv/bin:$PATH"
   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+export PATH="$HOME/.cargo/bin:$PATH"
 
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:~/go/bin
-
-# export PATH="$HOME/bin/cc-test-reporter"
-
-# Potentially useful path in the future
-# export PATH="/usr/local/opt/qt@5.5/bin:$PATH"
-# export PATH="/usr/local/Cellar/chromedriver/2.30/bin:$PATH"
+case `uname` in
+  Darwin)
+    # commands for OS X go here
+    export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin:~/go/bin
+  ;;
+  Linux)
+    # commands for Linux go here
+  ;;
+  FreeBSD)
+    # commands for FreeBSD go here
+  ;;
+esac
 # ----------------------------------------------------------------------------------
 
 # Git Editor setting (won't work without having macvim installed)
@@ -123,8 +129,10 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 # ----------------------------------------------------------------------------------
 
-# disabling flow controler
-stty -ixon
+# disabling flow controler, may not actually need this :wq
+# [[ $- == *i* ]] && stty -ixon
+# OR
+# [[ -o interactive ]] && stty -ixon
 # ----------------------------------------------------------------------------------
 
 # FZF
