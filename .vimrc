@@ -170,6 +170,10 @@ inoremap jj <Esc>
 nnoremap p p=`]
 nnoremap <c-p> p
 vnoremap // y/<C-R>"<CR>
+
+" linux specific for copying
+noremap <Leader>y "+y
+noremap <Leader>p "+p
 " -------------------------------------------------------------------------------
 
 " auto highlight trailing white spaces
