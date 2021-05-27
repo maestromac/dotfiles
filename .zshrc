@@ -97,11 +97,14 @@ esac
 # Git Editor setting (won't work without having macvim installed)
 # export GIT_EDITOR='/Applications/MacVim.app/Contents/MacOS/Vim -f '
 export GIT_EDITOR='nvim'
+export EDITOR='nvim'
 # ----------------------------------------------------------------------------------
 
 # Alias
+export RUBYOPT="-W:deprecated"
 alias aadrop='cd $HOME/Dropbox/AppAcademy'
 alias forem='cd ~/repositories/forem'
+alias android='cd ~/AndroidStudioProjects/DEV-Android'
 alias be='bundle exec'
 alias bs='bin/rails s'
 alias bc='bin/rails c'
@@ -119,7 +122,7 @@ alias removealldocker='docker stop $(docker ps -a -q) && docker rm $(docker ps -
 alias prepare='bundle && yarn && bin/rails db:migrate'
 alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias genctags='ctags -R --exclude=.git --exclude=node_modules'
+alias genctags='ctags -R --exclude=.git --exclude=node_modules --exclude=vendor'
 alias cachecheck='curl -svo /dev/null -H "Fastly-Debug:1" '
 # ----------------------------------------------------------------------------------
 
@@ -141,24 +144,12 @@ export FZF_DEFAULT_COMMAND='ag -g ""'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 # ----------------------------------------------------------------------------------
 
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh ]] && . /usr/local/lib/node_modules/serverless/node_modules/tabtab/.completions/sls.zsh
-
-
-# added by travis gem
-[ -f /Users/macsiri/.travis/travis.sh ] && source /Users/macsiri/.travis/travis.sh
-
-# tabtab source for slss package
-# uninstall by removing these lines or running `tabtab uninstall slss`
-[[ -f /Users/macsiri/.nvm/versions/node/v10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/macsiri/.nvm/versions/node/v10.15.3/lib/node_modules/serverless/node_modules/tabtab/.completions/slss.zsh
-
 # place this after nvm initialization!
 
 prompt_context() {}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# added by travis gem
+[ ! -s /home/mac/.travis/travis.sh ] || source /home/mac/.travis/travis.sh

@@ -20,7 +20,9 @@ Plug 'ngmy/vim-rubocop'
 Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
 Plug 'pedrohdz/vim-yaml-folds'
+Plug 'preservim/tagbar'
 Plug 'prettier/vim-prettier', { 'do': 'yarn install', 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue'] }
+Plug 'ryanoasis/vim-devicons'
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'tpope/vim-dispatch'
@@ -45,14 +47,12 @@ Plug 'w0rp/ale'
 " Plug 'Valloric/YouCompleteMe'
 " Plug 'mattn/emmet-vim'
 " Plug 'michaeljsmith/vim-indent-object'
-" Plug 'ryanoasis/vim-devicons'
 " Plug 'galooshi/vim-import-js'
 call plug#end()
 " -------------------------------------------------------------------------------
 
 " Misc setting
 " set cursorline
-set encoding=utf8
 set updatetime=2000
 set splitright
 set splitbelow
@@ -281,3 +281,9 @@ inoremap <expr><S-TAB> pumvisible() ? "\<C-p>" : "\<C-h>"
 " goyo.vim
 
 let g:goyo_width = 140
+
+" -------------------------------------------------------------------------------
+
+" tagbar
+nmap <F8> :TagbarToggle<CR>
+let g:tagbar_width = 80
