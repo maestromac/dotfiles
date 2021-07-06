@@ -17,7 +17,7 @@ export TERM="xterm-256color"
 # ZSH_THEME="agnoster"
 
 ZSH_THEME="powerlevel10k/powerlevel10k"
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir rbenv vcs)
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs vi_mode root_indicator history time)
 POWERLEVEL9K_VI_INSERT_MODE_STRING="NSRT"
 POWERLEVEL9K_VI_COMMAND_MODE_STRING="NRML"
@@ -68,7 +68,7 @@ POWERLEVEL9K_VI_MODE_NORMAL_FOREGROUND="black"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git vi-mode)
+plugins=(git vi-mode asdf)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -76,8 +76,8 @@ source $ZSH/oh-my-zsh.sh
 # ----------------------------------------------------------------------------------
 
 # Path
-export PATH="$HOME/.rbenv/bin:$PATH"
-  if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+# export PATH="$HOME/.rbenv/bin:$PATH"
+#   if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.cargo/bin:$PATH"
 
 case `uname` in
@@ -122,7 +122,7 @@ alias removealldocker='docker stop $(docker ps -a -q) && docker rm $(docker ps -
 alias prepare='bundle && yarn && bin/rails db:migrate'
 alias rebaseme='gcm && glum && gp && gco - && git rebase master' # remember that this alias need zsh git plug in
 alias dot='/usr/bin/git --git-dir=$HOME/.cfg/ --work-tree=$HOME'
-alias genctags='ctags -R --exclude=.git --exclude=node_modules --exclude=vendor'
+alias genctags='ctags -R --exclude=.git --exclude=node_modules --exclude=vendor --exclude=.gems'
 alias cachecheck='curl -svo /dev/null -H "Fastly-Debug:1" '
 # ----------------------------------------------------------------------------------
 
@@ -153,3 +153,7 @@ prompt_context() {}
 
 # added by travis gem
 [ ! -s /home/mac/.travis/travis.sh ] || source /home/mac/.travis/travis.sh
+
+
+# Added by serverless binary installer
+export PATH="$HOME/.serverless/bin:$PATH"
